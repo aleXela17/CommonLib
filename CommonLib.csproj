@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>0.1.1.2311</AssemblyVersion>
+    <FileVersion>0.1.1.1130</FileVersion>
   </PropertyGroup>
 
 </Project>
