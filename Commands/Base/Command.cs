@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using System.Windows.Markup;
 using System.Xaml;
+using CommonLib.ViewModels.Base;
 
 namespace CommonLib.Commands.Base;
 
@@ -66,7 +67,7 @@ public abstract class Command : MarkupExtension, ICommand, INotifyPropertyChange
 			CanExecuteChangedHandlers -= value;
 		}
 	}
-	public virtual bool CanExecute(object? parameter) => _isCanExecute || ViewModel.ViewModel.IsDesignMode;
+	public virtual bool CanExecute(object? parameter) => _isCanExecute || ViewModel.IsDesignMode;
 
 	public abstract void Execute(object? parameter);
 

@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace CommonLib.ViewModel.Base;
+namespace CommonLib.ViewModels.Base;
 
 public class ViewModel : INotifyPropertyChanged
 {

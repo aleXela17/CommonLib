@@ -1,6 +1,8 @@
-﻿namespace CommonLib.ViewModel;
+﻿using CommonLib.ViewModels.Base;
 
-public class TitledViewModel : Base.ViewModel
+namespace CommonLib.ViewModels;
+
+public class TitledViewModel : ViewModel
 {
 	/// <summary>Заголовок</summary>
 	private string? _title;
