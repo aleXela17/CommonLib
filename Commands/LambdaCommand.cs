@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Markup;
 using CommonLib.Commands.Base;
+using CommonLib.ViewModels.Base;
 
 namespace CommonLib.Commands;
 
@@ -81,7 +82,7 @@ public class LambdaCommand : Command
 	/// <param name="parameter">Параметр процесса выполнения команды</param>
 	/// <returns>Истина, если команда может быть выполнена</returns>
 	public override bool CanExecute(object? parameter) =>
-		ViewModel.ViewModel.IsDesignMode
+		ViewModel.IsDesignMode
 		|| IsCanExecute && (_CanExecute?.Invoke(parameter) ?? true);
 
 	/// <summary>Проверка возможности выполнения команды</summary>
